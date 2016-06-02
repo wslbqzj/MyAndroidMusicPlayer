@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" 
+    android:orientation="vertical"
+    android:background="@drawable/beijin">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+        <Button 
+            android:id="@+id/ly"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="lyric"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:id="@+id/lrc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+ 
+            android:text="歌词显示区"
+            android:textColor="#E78036"
+            android:textSize="15sp" 
+            android:layout_weight="6"/>
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        
+        <ListView 
+            android:id="@+id/listview1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        </ListView>
+ 
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#eeeeee">
+        
+        <TextView 
+            android:id="@+id/timenow"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="0000"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_weight="1"/>
+        <TextView 
+            android:id="@+id/geming"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="歌名:"
+            android:textSize="15sp"
+            android:textColor="#91CECF"
+            android:layout_weight="6"/>
+        <TextView 
+            android:id="@+id/timeall"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="0000"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee">
+        <SeekBar 
+            android:id="@+id/seekbar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="10dp"
+            android:max="100"
+            android:thumb="@drawable/miku"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee">
+        <ImageView 
+            android:id="@+id/last"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/last"/>
+        <ImageView 
+            android:id="@+id/pause"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/play"/>
+
+        <ImageView 
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/next"/>
+        <ImageView 
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/exit"/>
+    </LinearLayout>
+
+</LinearLayout>
